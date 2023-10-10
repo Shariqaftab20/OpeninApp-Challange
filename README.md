@@ -4,6 +4,14 @@
 ## Overview
 This Colab notebook provides a step-by-step guide for running the Wav2Lip inference on Google Colab. Wav2Lip is a lip-syncing tool that generates realistic lip movements based on audio input.
 
+### 3. Setup Google Drive
+- In your Google Drive:
+  1. Create a folder called `Wav2Lip` in `MyDrive`.
+  2. Upload your input video (`input_vid.mp4`) and input audio (`input_aud.wav`) to this folder.
+  3. Download the pretrained model weights from [https://github.com/Rudrabha/Wav2Lip#getting-the-weights](https://github.com/Rudrabha/Wav2Lip#getting-the-weights).
+  4. Create a folder called `Wav2lip` in `MyDrive` and upload the pretrained model weights in there.
+
+
 ## How to Run
 
 ### 1. Setup Environment
@@ -16,7 +24,7 @@ This Colab notebook provides a step-by-step guide for running the Wav2Lip infere
 - List the contents of the specified Google Drive folder to ensure the required input files (`input_aud.wav` and `input_vid.mp4`) are present.
 
 ### 4. Copy Pre-trained Model
-- Copy the pre-trained Wav2Lip GAN model (`wav2lip_gan.pth`) from Google Drive to the Wav2Lip checkpoints folder.
+- Copy the pre-trained Wav2Lip-GAN (or any other pretrained model) model (`wav2lip_gan.pth`) from Google Drive to the Wav2Lip checkpoints folder.
 
 ### 5. Install Dependencies
 - Install the necessary dependencies listed in `requirements.txt`. Note: There might be an issue with OpenCV version compatibility, and an attempt to install a specific version of OpenCV might fail.
